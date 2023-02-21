@@ -13,7 +13,7 @@ This library allow us to send Laravel events to an SNS topic, and receive them t
 ## Install
 
 ```shell script
-$ composer require ralbear/laravel-events-to-sns
+$ composer require nightwriter/laravel-events-to-sns
 ```
 Add the provider to `config/app.php`
 
