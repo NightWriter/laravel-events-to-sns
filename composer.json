@@ -1,5 +1,5 @@
 {
-    "name": "ralbear/laravel-events-to-sns",
+    "name": "nightwriter/laravel-events-to-sns",
     "description": "Laravel package to push events to AWS SNS",
     "keywords": [
         "ralbear",
