@@ -48,7 +48,7 @@ class AwsSnsService
                 'TopicArn' => $topic->getTopicArn(),
             ]);
         } catch (SnsException $e) {
-            throw new MessageCantBeSendException($e);
+            throw new MessageCantBeSendException($e->getMessage());
         }
     }
 }
