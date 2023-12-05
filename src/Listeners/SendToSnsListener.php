@@ -56,11 +56,6 @@ class SendToSnsListener
      */
     protected function shouldDispatch(ShouldBeInSns $event)
     {
-        $lock = Container::getInstance()->make(Cache::class)->lock(
-            sprintf('unique:%s%s', get_class($event), $event->uniqueId()),
-            $event->validFor()
-        );
-
-        return (bool)$lock->get();
+        return true;
     }
 }
